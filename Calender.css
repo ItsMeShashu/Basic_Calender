@@ -1,0 +1,104 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#outermost {
+  width: 100vw;
+  height: 100vh;
+  background-color: cornsilk;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calender {
+  height: 510px;
+  width: 490px;
+  background-color: white;
+  box-shadow: 0px 0px 6px 4px rgba(116, 107, 107, 0.7);
+}
+
+#description {
+  background-color: rgb(74, 74, 170);
+  /* height: 100px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  color: white;
+}
+
+#items {
+  font-size: 15px;
+  font-style: italic;
+  text-shadow: 1.3px 1.3px black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#year {
+  font-size: 15px;
+  position: static;
+}
+
+#days_name {
+  height: 25px;
+  width: 100%;
+  background-color: darkblue;
+  color: white;
+  padding-top: 7px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bolder;
+}
+
+/* #days_name div {
+  width: 70px;
+  text-align: center;
+} */
+
+#day_no {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#day_no div {
+  width: 70px;
+  text-align: center;
+  padding: 20px 0px;
+  transition: ease-in-out 0.2s;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+#day_no div:hover {
+  background-color: rgb(8, 54, 141);
+  color: white;
+}
+#day_no div {
+  /* background-color: rgb(8, 54, 141); */
+  /* color: white; */
+  cursor: pointer;
+}
+.abc {
+  background-color: rgb(8, 54, 141);
+}
+.pre_month {
+  color: rgb(163, 159, 159);
+}
+
+.icon {
+  font-size: 25px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgb(5, 52, 133);
+}
+
+.icon:hover {
+  cursor: pointer;
+}
